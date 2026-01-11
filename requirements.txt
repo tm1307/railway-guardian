@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+streamlit
+joblib
+ultralytics
+opencv-python-headless
+plotly
+requests
+moviepy<2.0
