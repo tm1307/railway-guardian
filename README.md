@@ -114,6 +114,3 @@ railway-guardian/
 
 This project is for educational and prototype purposes.
 
-```
-
-```
