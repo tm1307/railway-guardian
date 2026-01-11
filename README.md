@@ -81,5 +81,7 @@ railway-guardian/
 ├── .gitignore           # Ignored files (venv, videos)
 ├── models/              # Saved .pkl models
 └── data/                # Dataset (vibration_data.csv)
+
+
 🛡️ License
 This project is for educational and prototype purposes.
