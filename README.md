@@ -1,6 +1,3 @@
-Here is a professional, **Hackathon-Ready README.md** for your project.
-
-You can copy-paste this directly into your GitHub repository. It includes badges, clear setup instructions, and a good explanation of the "AI Fusion" logic to impress judges.
 
 ### 📄 `README.md`
 
