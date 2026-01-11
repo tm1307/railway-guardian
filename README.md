@@ -32,34 +32,6 @@ Combines two distinct AI models to prevent false positives:
 
 ---
 
-## 🛠️ System Architecture
-
-```mermaid
-graph TD
-    subgraph SENSORS [Data Inputs]
-        A[IoT Vibration Sensor] -->|HTTP Stream| C(Fusion Engine)
-        B[CCTV / Webcam] -->|CV2 Capture| C
-    end
-
-    subgraph BRAIN [AI Logic]
-        C --> D{Anomaly Detector}
-        C --> E{YOLOv8 Vision}
-        C --> F[Maintenance API]
-        
-        D -- "Impact > 0.4g" --> Logic
-        E -- "Person Detected" --> Logic
-        F -- "Work Scheduled?" --> Logic
-    end
-
-    subgraph OUTPUT [Dashboard]
-        Logic -->|Red| Alert[🚨 SABOTAGE]
-        Logic -->|Blue| Maint[✅ MAINTENANCE]
-        Logic -->|Green| Safe[🟢 SECURE]
-    end
-💻 Installation & Setup
-1. Clone the Repository
-Bash
-
 git clone [https://github.com/YOUR_USERNAME/railway-guardian.git](https://github.com/YOUR_USERNAME/railway-guardian.git)
 cd railway-guardian
 2. Install Dependencies
