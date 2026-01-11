@@ -1,6 +1,4 @@
 
-### 📄 `README.md`
-
 ```markdown
 # 🛡️ Railway Guardian Pro: AI Fusion Security System
 
