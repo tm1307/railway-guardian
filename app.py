@@ -7,7 +7,7 @@ import tempfile
 import logic
 import maintenance
 
-
+# --- 1. PAGE CONFIGURATION ---
 st.set_page_config(
     page_title="Railway Guardian Pro",
     page_icon="🛡️",
@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
+# --- 2. CUSTOM CSS STYLING ---
 st.markdown("""
     <style>
         .stApp { background-color: #0E1117; }
@@ -32,6 +32,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# --- 3. DATA LOADING ---
 @st.cache_data
 def load_data():
     try:
@@ -42,12 +43,12 @@ def load_data():
 
 df_csv = load_data()
 
-
+# --- 4. SIDEBAR CONTROLS ---
 st.sidebar.image("https://img.icons8.com/color/96/train.png", width=60)
 st.sidebar.title("SYSTEM CONTROL")
 st.sidebar.markdown("---")
 
-
+# --- SECTION A: OPERATIONS API (Maintenance) ---
 st.sidebar.subheader("👷 Operations API")
 maint_mode = st.sidebar.toggle("Simulate Scheduled Work", value=False)
 maintenance.toggle_maintenance("section_1", maint_mode)
@@ -59,29 +60,35 @@ else:
 
 st.sidebar.markdown("---")
 
-
+# --- SECTION B: DATA SOURCE (Vibration) ---
 st.sidebar.subheader("📡 Vibration Source")
 data_source = st.sidebar.radio(
     "Select Mode:", 
-    ["Simulation", "Real-Time", "Forensic Analysis (Upload Video)"],
+    ["Simulation (CSV Replay)", "Real-Time (Phyphox iOS)", "Forensic Analysis (Upload Video)"],
     label_visibility="collapsed"
 )
 
+# --- SAFETY VARIABLES (Prevent Crashes) ---
+sim_mode = "Normal Track"
 video_file_path = None
 audio_levels = []
 
-if data_source == "Real-Time":
+# --- CONFIG BASED ON SOURCE ---
+if data_source == "Real-Time (Phyphox iOS)":
+    # Shows only if Real-Time is selected
     default_ip = "192.168.1.10:8080"
     phone_ip = st.sidebar.text_input("Phyphox IP:", default_ip)
     if st.sidebar.button("🔗 Connect Sensor"):
         logic.set_phyphox_url(phone_ip)
         st.sidebar.success(f"Linked: {phone_ip}")
         
-elif data_source == "Simulation":
+elif data_source == "Simulation (CSV Replay)":
+    # Shows only if Simulation is selected
     st.sidebar.caption("Dataset: vibration_data.csv")
     sim_mode = st.sidebar.selectbox("⚡ Inject Scenario:", ["Normal Track", "Earthquake (High)", "Sabotage (Spikes)"])
 
 elif data_source == "Forensic Analysis (Upload Video)":
+    # Shows only if Forensic is selected
     st.sidebar.info("Upload MP4/AVI to analyze noise & tools.")
     uploaded_video = st.sidebar.file_uploader("Upload Video File", type=['mp4', 'avi', 'mov'])
     if uploaded_video:
@@ -94,6 +101,7 @@ elif data_source == "Forensic Analysis (Upload Video)":
 
 st.sidebar.markdown("---")
 
+# --- SECTION C: VISION SYSTEM (Camera) ---
 st.sidebar.subheader("👁️ Vision Feed")
 
 use_webcam = False
@@ -105,7 +113,7 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.info("System Ready. Awaiting Activation.")
 
-
+# --- 5. MAIN DASHBOARD ---
 col_header_1, col_header_2 = st.columns([3, 1])
 with col_header_1:
     st.title("🛡️ Railway Guardian AI")
@@ -134,7 +142,7 @@ alert_placeholder = st.empty()
 
 if 'stream_index' not in st.session_state: st.session_state['stream_index'] = 0
 
-
+# --- 6. EXECUTION LOOP ---
 run_system = st.sidebar.checkbox("🚀 INITIATE SYSTEM", value=False)
 
 if run_system:
@@ -142,11 +150,11 @@ if run_system:
     
     cap = None
     
-   
+    # CASE 1: Forensic Video File
     if data_source == "Forensic Analysis (Upload Video)" and video_file_path:
         cap = cv2.VideoCapture(video_file_path)
         
-    
+    # CASE 2: Live Laptop Webcam
     elif data_source != "Forensic Analysis (Upload Video)" and use_webcam:
         cap = cv2.VideoCapture(0)  
     
@@ -154,7 +162,7 @@ if run_system:
     frame_count = 0
 
     while run_system:
-        
+        # A. GET DATA (Noise/Vibration Level)
         vib_level = 0.0
         
         if data_source == "Real-Time (Phyphox iOS)":
@@ -166,13 +174,13 @@ if run_system:
             else:
                 vib_level = 0.0
                 
-        else: 
+        else: # Simulation (CSV Replay)
             if df_csv is not None and not df_csv.empty:
                 idx = st.session_state['stream_index'] % len(df_csv)
                 row = df_csv.iloc[idx].values
                 base = np.mean(np.abs(row))
                 
-                
+                # Injection Logic
                 if sim_mode == "Normal Track": vib_level = base * 0.1
                 elif sim_mode == "Earthquake (High)": vib_level = base + 0.6
                 else: 
@@ -184,25 +192,24 @@ if run_system:
                 
                 st.session_state['stream_index'] += 1
 
-        
+        # B. GET VIDEO FRAME
         if cap and cap.isOpened():
             ret, frame = cap.read()
             if not ret:
-                
+                # Loop video
                 if data_source == "Forensic Analysis (Upload Video)":
                     cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
                     frame_count = 0
                     continue
                 else:
-                    
                     frame = np.zeros((480, 640, 3), dtype=np.uint8)
         else:
             frame = np.zeros((480, 640, 3), dtype=np.uint8)
 
-        
+        # C. AI FUSION
         annotated_frame, alert_status, color, explanation = logic.detect_threats(frame, vib_level)
 
-        
+        # D. UI UPDATES
         frame_rgb = cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB)
         video_placeholder.image(frame_rgb, channels="RGB", use_container_width=True)
 
