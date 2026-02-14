@@ -7,7 +7,7 @@ import tempfile
 import logic
 import maintenance
 
-# --- 1. PAGE CONFIGURATION ---
+
 st.set_page_config(
     page_title="Railway Guardian Pro",
     page_icon="🛡️",
@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- 2. CUSTOM CSS STYLING ---
+
 st.markdown("""
     <style>
         .stApp { background-color: #0E1117; }
@@ -32,7 +32,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- 3. DATA LOADING ---
+
 @st.cache_data
 def load_data():
     try:
@@ -43,7 +43,7 @@ def load_data():
 
 df_csv = load_data()
 
-# --- 4. SIDEBAR CONTROLS ---
+
 st.sidebar.image("https://img.icons8.com/color/96/train.png", width=60)
 st.sidebar.title("SYSTEM CONTROL")
 st.sidebar.markdown("---")
@@ -64,7 +64,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("📡 Vibration Source")
 data_source = st.sidebar.radio(
     "Select Mode:", 
-    ["Simulation (CSV Replay)", "Real-Time (Phyphox iOS)", "Forensic Analysis (Upload Video)"],
+    ["Simulation", "Real-Time", "Forensic Analysis (Upload Video)"],
     label_visibility="collapsed"
 )
 
@@ -74,7 +74,7 @@ video_file_path = None
 audio_levels = []
 
 # --- CONFIG BASED ON SOURCE ---
-if data_source == "Real-Time (Phyphox iOS)":
+if data_source == "Real-Time":
     # Shows only if Real-Time is selected
     default_ip = "192.168.1.10:8080"
     phone_ip = st.sidebar.text_input("Phyphox IP:", default_ip)
@@ -82,7 +82,7 @@ if data_source == "Real-Time (Phyphox iOS)":
         logic.set_phyphox_url(phone_ip)
         st.sidebar.success(f"Linked: {phone_ip}")
         
-elif data_source == "Simulation (CSV Replay)":
+elif data_source == "Simulation":
     # Shows only if Simulation is selected
     st.sidebar.caption("Dataset: vibration_data.csv")
     sim_mode = st.sidebar.selectbox("⚡ Inject Scenario:", ["Normal Track", "Earthquake (High)", "Sabotage (Spikes)"])
