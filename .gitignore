@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 *.pyd
 
+*.pt
+*.mp4
+
 venv/
 .venv/
 env/
