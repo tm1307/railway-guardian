@@ -1,5 +1,4 @@
-# Railway Guardian: C4ISR Platform
-**Ministry of Railways • Directorate of Security**
+# Railway Guardian: 
 
 Railway Guardian is a comprehensive, production-ready Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance (C4ISR) platform designed to secure and monitor Indian Railway infrastructure. 
 
