@@ -48,6 +48,8 @@ runs/
 .env
 .env.local
 
+
+.pkl
 # Misc
 *.log
 *.mp4
