@@ -1,0 +1,19 @@
+{
+  "incident_id": "RG-20260307-0001",
+  "rdso_code": "RDSO-SEC-003",
+  "timestamp": "2026-03-07 21:05:46.043195",
+  "timestamp_epoch": 1772897746.043195,
+  "alert_type": "\u26a0\ufe0f SUSPICIOUS ACTIVITY",
+  "severity": "WARNING",
+  "risk_score": 45.1,
+  "vibration_level": 0.0688,
+  "detections": "person (87%), person (86%), handbag (28%)",
+  "explanation": "Person with equipment/tools detected.\nDetections: person (87%), person (86%), handbag (28%) | Risk: 45.1/100",
+  "zone": "Standard Corridor",
+  "jurisdiction": "Indian Railways",
+  "compliance": "RDSO Safety Directive 2024",
+  "system_version": "RailGuard Pro",
+  "model_pipeline": "YOLOv8n + IsolationForest + FusionEngine",
+  "integrity_hash": "7f1aa007bfb5eb160056b6391491a3245412e65055b240558ad630e9defc1347",
+  "has_frame_snapshot": true
+}

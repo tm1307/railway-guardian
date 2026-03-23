@@ -1,0 +1,19 @@
+{
+  "incident_id": "RG-20260316-0001",
+  "rdso_code": "RDSO-SEC-001",
+  "timestamp": "2026-03-16 21:26:31.122832",
+  "timestamp_epoch": 1773676591.122832,
+  "alert_type": "\ud83d\udea8 SABOTAGE",
+  "severity": "CRITICAL",
+  "risk_score": 85.5,
+  "vibration_level": 0.62,
+  "detections": "person (92%)",
+  "explanation": "Test forensic report",
+  "zone": "Restricted \u2014 Bridge",
+  "jurisdiction": "Indian Railways",
+  "compliance": "RDSO Safety Directive 2024",
+  "system_version": "RailGuard Pro",
+  "model_pipeline": "YOLOv8n + IsolationForest + FusionEngine",
+  "integrity_hash": "436f0e077196378f9f3b4e011615ab3782a6c84ba7c669cb82bc52dabd046dc7",
+  "has_frame_snapshot": false
+}

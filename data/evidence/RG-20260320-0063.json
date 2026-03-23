@@ -1,0 +1,19 @@
+{
+  "incident_id": "RG-20260320-0063",
+  "rdso_code": "RDSO-SEC-001",
+  "timestamp": "2026-03-20 17:20:04.686682",
+  "timestamp_epoch": 1774007404.686682,
+  "alert_type": "\ud83d\udea8 SABOTAGE DETECTED",
+  "severity": "CRITICAL",
+  "risk_score": 86.7,
+  "vibration_level": 0.5023,
+  "detections": "person (65%), person (53%), person (35%)",
+  "explanation": "CRITICAL: Unauthorized person + high vibration (0.50)\nDetections: person (65%), person (53%), person (35%) | Risk: 86.7/100",
+  "zone": "Standard Corridor",
+  "jurisdiction": "Indian Railways",
+  "compliance": "RDSO Safety Directive 2024",
+  "system_version": "RailGuard Pro",
+  "model_pipeline": "YOLOv8n + IsolationForest + FusionEngine",
+  "integrity_hash": "5b3f980644e5d6d7ba250b7a30ba7313920f0a3080b6824252ec0e8d20b3446f",
+  "has_frame_snapshot": true
+}

@@ -1,0 +1,172 @@
+dispatch_id,timestamp,alert_type,severity,risk_score,location_km,zone,details,responding_unit,status,estimated_response_min,channel,channel_status,dispatch_hash,operator
+RPF-20260320-0001,2026-03-20 17:03:40,TEST_ALERT,CRITICAL,85.0,5.5,Z3,Test dispatch,RPF-Bridge-Guard,DISPATCHED,2.4,LOG,LOG:OK,0b54efd856f8af56683feabe4bf4d00779932d998661e6df73ed0779b7a791ab,test_user
+RPF-20260320-0001,2026-03-20 17:04:22,TEST_ALERT,CRITICAL,85.0,5.5,Z3,Test dispatch,RPF-Bridge-Guard,DISPATCHED,2.4,LOG,LOG:OK,eabb96e2415f95ddf5add61a291eb731709f64f864fef85836d95356b570aa7d,test_user
+RPF-20260320-0001,2026-03-20 17:05:24,TEST_ALERT,CRITICAL,85.0,5.5,Z3,Test dispatch,RPF-Bridge-Guard,DISPATCHED,2.4,LOG,LOG:OK,3b4f3997c7413283fdf3fbf5ba929a1e28c8b06dd5854329ef177bf5de7cf700,test_user
+RPF-20260320-0001,2026-03-20 17:19:34,🔧 MECHANICAL FAULT,WARNING,45.7,7.83,Z4,"Unexplained high vibration (0.45). No work scheduled.
+Risk: 45.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,bb03372693994adb38ec32810763faa03d390804e61316e8462470131d588c81,admin
+RPF-20260320-0002,2026-03-20 17:19:34,🔧 MECHANICAL FAULT,WARNING,46.1,7.84,Z4,"Unexplained high vibration (0.45). No work scheduled.
+Risk: 46.1/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,eec6196c8ab5c15c66d7deef763e41b56d1717f6c29a8f26b993193e69c45f72,admin
+RPF-20260320-0003,2026-03-20 17:19:35,🔧 MECHANICAL FAULT,WARNING,50.0,7.89,Z4,"Unexplained high vibration (0.54). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,50f389331fd2f09a4b2052a94629c401d0297875b2e6c3a55be13677c8348d4c,admin
+RPF-20260320-0004,2026-03-20 17:19:36,🔧 MECHANICAL FAULT,WARNING,50.0,7.9,Z4,"Unexplained high vibration (0.58). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,3a54079d3dc560cc77ec867b30060247044ef2b5f43996d02f4e1442393cde83,admin
+RPF-20260320-0005,2026-03-20 17:19:36,🔧 MECHANICAL FAULT,WARNING,50.0,7.91,Z4,"Unexplained high vibration (0.58). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,e8244c1bad98a9b9d2af9a85617513d980870e869a93e000b430025372d6b686,admin
+RPF-20260320-0006,2026-03-20 17:19:40,🔧 MECHANICAL FAULT,WARNING,46.8,8.14,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 46.8/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,3a93dd8f3f6a32d66be785df9c46f4176b6de2c0321556f5ff26c0581bec121d,admin
+RPF-20260320-0007,2026-03-20 17:19:41,🔧 MECHANICAL FAULT,WARNING,50.0,8.15,Z4,"Unexplained high vibration (0.54). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,a8b6f8bc702670444af5b8103ed191070ed07bcc14b718d4da97248a9089da65,admin
+RPF-20260320-0008,2026-03-20 17:19:41,🔧 MECHANICAL FAULT,WARNING,50.0,8.16,Z4,"Unexplained high vibration (0.59). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,ccfed233ea023930632c1c42f2f4c7a9341c126fd7cfa4fab55d407c2d5c32a2,admin
+RPF-20260320-0009,2026-03-20 17:19:41,🔧 MECHANICAL FAULT,WARNING,50.0,8.17,Z4,"Unexplained high vibration (0.59). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,dc551c75082d43c568bafee3cf353237b1a979493b20b040419d2580e05cd49c,admin
+RPF-20260320-0010,2026-03-20 17:19:41,🔧 MECHANICAL FAULT,WARNING,50.0,8.18,Z4,"Unexplained high vibration (0.50). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.1,LOG,LOG:OK,dd1d4fd442af738f75880c2a8536bcd1940178c0ae15d60a168fc2e31a380735,admin
+RPF-20260320-0011,2026-03-20 17:19:41,🔧 MECHANICAL FAULT,WARNING,47.1,8.19,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 47.1/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,11315493aacac1c32f22f6387470941f1503616d520d42385f918fc67d62f45d,admin
+RPF-20260320-0012,2026-03-20 17:19:42,🔧 MECHANICAL FAULT,WARNING,45.3,8.2,Z4,"Unexplained high vibration (0.44). No work scheduled.
+Risk: 45.3/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,758d9c81198e43aad9f4a8015db65ffdc85a48e2b971f0890bfebc12dad8553c,admin
+RPF-20260320-0013,2026-03-20 17:19:42,🔧 MECHANICAL FAULT,WARNING,46.6,8.21,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 46.6/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,5ecadbb3ca1262409f2c1394873b15b9fe241c28d1ee8febeab367a33dbce01f,admin
+RPF-20260320-0014,2026-03-20 17:19:43,🔧 MECHANICAL FAULT,WARNING,47.5,8.25,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.5/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,c771f568bac74c3f5742859a60c2e8c41cd5dc7f86dd5e0da815f5bbd498dfb6,admin
+RPF-20260320-0015,2026-03-20 17:19:43,🔧 MECHANICAL FAULT,WARNING,47.2,8.26,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 47.2/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,3cdc07a46bd16194c1be4818c11801caef2ad96070290ff4f141701d7afcc37d,admin
+RPF-20260320-0016,2026-03-20 17:19:43,🔧 MECHANICAL FAULT,WARNING,47.5,8.27,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.5/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.2,LOG,LOG:OK,628a8cf67bc58571231f26d662df6c7cf33b2bf10a196c0ae1763d7f63387661,admin
+RPF-20260320-0017,2026-03-20 17:19:44,🔧 MECHANICAL FAULT,WARNING,45.4,8.35,Z4,"Unexplained high vibration (0.44). No work scheduled.
+Risk: 45.4/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.3,LOG,LOG:OK,41abded0f93f3bd91d00f368f8bce62b2a674de174b782b7cacef1823c380f6a,admin
+RPF-20260320-0018,2026-03-20 17:19:45,🔧 MECHANICAL FAULT,WARNING,47.8,8.36,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.8/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.3,LOG,LOG:OK,388bef4b5e760ec23a694ad9875819fc52b5c35e85e9ef5d90522c66461a7640,admin
+RPF-20260320-0019,2026-03-20 17:19:45,🔧 MECHANICAL FAULT,WARNING,50.0,8.37,Z4,"Unexplained high vibration (0.55). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.3,LOG,LOG:OK,568276fb3e907671aecdd38637ed4f3ac127ddf9ed03ab5c917dbb7ffe9db832,admin
+RPF-20260320-0020,2026-03-20 17:19:45,🔧 MECHANICAL FAULT,WARNING,50.0,8.38,Z4,"Unexplained high vibration (0.59). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.3,LOG,LOG:OK,9ffeac6e751ffb290489cec05c1572a6753f9b8e7bf4c2aba0c337d6ee54aa3d,admin
+RPF-20260320-0021,2026-03-20 17:19:45,🔧 MECHANICAL FAULT,WARNING,50.0,8.39,Z4,"Unexplained high vibration (0.57). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.3,LOG,LOG:OK,1bc3f3c4904b0978338fd4a185d029a0f1e304bb5fbad9bb875b22aadf049fc1,admin
+RPF-20260320-0022,2026-03-20 17:19:50,🔧 MECHANICAL FAULT,WARNING,49.7,8.61,Z4,"Unexplained high vibration (0.50). No work scheduled.
+Risk: 49.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.5,LOG,LOG:OK,9920ef29be35854326905f67aacfc4b08f98701afa529b1e1b2f53a1b771b9c4,admin
+RPF-20260320-0023,2026-03-20 17:19:50,🔧 MECHANICAL FAULT,WARNING,50.0,8.62,Z4,"Unexplained high vibration (0.54). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.5,LOG,LOG:OK,e278ead8896b64b3c1ab5d8f05778f322fe08dc443f1fc3139d75acab34fdfb2,admin
+RPF-20260320-0024,2026-03-20 17:19:50,🔧 MECHANICAL FAULT,WARNING,50.0,8.63,Z4,"Unexplained high vibration (0.54). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.5,LOG,LOG:OK,0db09680b1c0f71a59ecd1f9c23b2f30b77f4b3461b14bd522f015050ab1271a,admin
+RPF-20260320-0025,2026-03-20 17:19:50,🔧 MECHANICAL FAULT,WARNING,47.9,8.64,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.9/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.5,LOG,LOG:OK,a50872037764bce2d9295ae0553bb94349324694fcd845a39254ca7b9a585f8b,admin
+RPF-20260320-0026,2026-03-20 17:19:51,🔧 MECHANICAL FAULT,WARNING,45.3,8.68,Z4,"Unexplained high vibration (0.44). No work scheduled.
+Risk: 45.3/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.5,LOG,LOG:OK,6ed9b8b46fe23758424d0218d5db74de1ed2384021235b3dc389ecc849e1755e,admin
+RPF-20260320-0027,2026-03-20 17:19:51,🔧 MECHANICAL FAULT,WARNING,46.7,8.69,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 46.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,21d46e0baeaa6861a27ea31d82eb64f05edbe8470dec644617305f060d629385,admin
+RPF-20260320-0028,2026-03-20 17:19:52,🔧 MECHANICAL FAULT,WARNING,50.0,8.7,Z4,"Unexplained high vibration (0.62). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,c027cc0c5e43a4e18aea9604c5e7745135307f9fcc01971d20b4a9cf860417a3,admin
+RPF-20260320-0029,2026-03-20 17:19:52,🔧 MECHANICAL FAULT,WARNING,50.0,8.71,Z4,"Unexplained high vibration (0.71). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,49a3b418a9153648f5a05cbcf87536f60de4ec246e463f4f4d66d0ee11567552,admin
+RPF-20260320-0030,2026-03-20 17:19:52,🔧 MECHANICAL FAULT,WARNING,50.0,8.73,Z4,"Unexplained high vibration (0.80). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,997c80315ca94c52a0d1addc210f6e2cbb7c72c8a9181277e6c27df924847e51,admin
+RPF-20260320-0031,2026-03-20 17:19:52,🔧 MECHANICAL FAULT,WARNING,50.0,8.74,Z4,"Unexplained high vibration (0.72). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,12f8a9f12790789c92b5d96547357252027241a3a478ad1bd4b537f0562f734a,admin
+RPF-20260320-0032,2026-03-20 17:19:52,🔧 MECHANICAL FAULT,WARNING,50.0,8.75,Z4,"Unexplained high vibration (0.69). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,549bd9ad59917ff03471cde3ddb02d988240f5db32920b735356396a32971b45,admin
+RPF-20260320-0033,2026-03-20 17:19:53,🔧 MECHANICAL FAULT,WARNING,50.0,8.75,Z4,"Unexplained high vibration (0.68). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,be82bb9090f405c836a9ebc688f7e9fa564315ca4b885f0b89a016fad9b5d468,admin
+RPF-20260320-0034,2026-03-20 17:19:53,🔧 MECHANICAL FAULT,WARNING,50.0,8.76,Z4,"Unexplained high vibration (0.69). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,0d7749b15e52aca885df713e84ddf25635a60eb8fcbd59fd62e7e39cac884410,admin
+RPF-20260320-0035,2026-03-20 17:19:53,🔧 MECHANICAL FAULT,WARNING,50.0,8.77,Z4,"Unexplained high vibration (0.68). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,97f7e2fc8d928871b157e5b765aaa498f532c248f8815fa0810f059259b110e0,admin
+RPF-20260320-0036,2026-03-20 17:19:53,🔧 MECHANICAL FAULT,WARNING,50.0,8.78,Z4,"Unexplained high vibration (0.55). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,799e24b42be7c427052d8e1064b18aec160fc3980d536e4759533f0580e3d3fb,admin
+RPF-20260320-0037,2026-03-20 17:19:53,🔧 MECHANICAL FAULT,WARNING,47.9,8.79,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.9/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.6,LOG,LOG:OK,4ce92d63f6b31cab66508ea08c5447f4bc43ee1357c6df1addda44efa6831f3a,admin
+RPF-20260320-0038,2026-03-20 17:19:54,🔧 MECHANICAL FAULT,WARNING,50.0,8.82,Z4,"Unexplained high vibration (0.59). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,0829db65e35011d8eb52879960f3410271e5b3c4ff210696819ed294002545bc,admin
+RPF-20260320-0039,2026-03-20 17:19:54,🔧 MECHANICAL FAULT,WARNING,50.0,8.83,Z4,"Unexplained high vibration (0.72). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,4ec96d33e4a027f90db93fbc262597b463e05a35ddfe9759cedaea2a9f1fe9d3,admin
+RPF-20260320-0040,2026-03-20 17:19:54,🔧 MECHANICAL FAULT,WARNING,50.0,8.84,Z4,"Unexplained high vibration (0.98). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,de9a074bccc2f3890966bb12ab2f789ddfcbcbf047f46fe2563e00ef86732e85,admin
+RPF-20260320-0041,2026-03-20 17:19:55,🔧 MECHANICAL FAULT,WARNING,50.0,8.85,Z4,"Unexplained high vibration (0.89). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,86a06ab78daff071ca6f31edf39ee613d9a692185c47c9e1cddfb946c839369e,admin
+RPF-20260320-0042,2026-03-20 17:19:55,🔧 MECHANICAL FAULT,WARNING,50.0,8.86,Z4,"Unexplained high vibration (0.86). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,9b287fba51ec1a1a91603a123f0043960d57e3b3764015bc8e72bede0f649ef1,admin
+RPF-20260320-0043,2026-03-20 17:19:55,🔧 MECHANICAL FAULT,WARNING,50.0,8.87,Z4,"Unexplained high vibration (0.58). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,ac48de5f8f20f67a04176904e62c97e406ac03d673a35d5f6a2e7931014f1341,admin
+RPF-20260320-0044,2026-03-20 17:19:55,🔧 MECHANICAL FAULT,WARNING,50.0,8.88,Z4,"Unexplained high vibration (0.57). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,bc25781c576bdef485441321de41a6769ee7fbd16d2aef6da9bb4ff9a98e280a,admin
+RPF-20260320-0045,2026-03-20 17:19:55,🔧 MECHANICAL FAULT,WARNING,50.0,8.89,Z4,"Unexplained high vibration (0.57). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,fa835290c440e2f7e46efb9635eb9c43bf73c1fa7f6b84b4d0d65ba19a0c4414,admin
+RPF-20260320-0046,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,50.0,8.9,Z4,"Unexplained high vibration (0.56). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,92fac18a94a63f1e0630ee5df3cfe53ccdc4a5dfc050202146dd164ceff98cc2,admin
+RPF-20260320-0047,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,50.0,8.91,Z4,"Unexplained high vibration (0.56). No work scheduled.
+Risk: 50.0/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,16fa00e1635d0c6132de310ecb2bdaedfd94395a43a669cac8368c8ccd7fa6bd,admin
+RPF-20260320-0048,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,49.7,8.92,Z4,"Unexplained high vibration (0.50). No work scheduled.
+Risk: 49.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,3c6965a60529d88f794a2f82aedf943d38d6396c7560b5243e51dd615ec422c0,admin
+RPF-20260320-0049,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,47.7,8.93,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.7,LOG,LOG:OK,4efbc7d28cff6a37ec4b32a00f8c95b76516a49757a3050db387ae5a0ff19a99,admin
+RPF-20260320-0050,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,45.8,8.94,Z4,"Unexplained high vibration (0.45). No work scheduled.
+Risk: 45.8/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.8,LOG,LOG:OK,9675db35c68917086b46dbed94bbc6c23f30f3ae36ae25d3083c94d2b7965937,admin
+RPF-20260320-0051,2026-03-20 17:19:56,🔧 MECHANICAL FAULT,WARNING,45.7,8.95,Z4,"Unexplained high vibration (0.45). No work scheduled.
+Risk: 45.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.8,LOG,LOG:OK,e98d39e7830ac6e1ec30f83c3c763dd4b1e34e5703894757a1b6292f4f360708,admin
+RPF-20260320-0052,2026-03-20 17:19:57,🔧 MECHANICAL FAULT,WARNING,47.4,8.96,Z4,"Unexplained high vibration (0.47). No work scheduled.
+Risk: 47.4/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.8,LOG,LOG:OK,bf9a1fb0f883ccbbb5895989754e1516a3c44cea2a99c545a269fc4232f13b64,admin
+RPF-20260320-0053,2026-03-20 17:19:57,🔧 MECHANICAL FAULT,WARNING,49.7,8.96,Z4,"Unexplained high vibration (0.50). No work scheduled.
+Risk: 49.7/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.8,LOG,LOG:OK,2c1ad376da48e06c2da1b3a7231a749d1ca01448d1769b6ecfcc5838d59f645c,admin
+RPF-20260320-0054,2026-03-20 17:19:57,🔧 MECHANICAL FAULT,WARNING,46.8,8.97,Z4,"Unexplained high vibration (0.46). No work scheduled.
+Risk: 46.8/100 | Zone: Approach Zone — Exit",RPF-Patrol-Beta,DISPATCHED,5.8,LOG,LOG:OK,d2776b9288487498e981a8d8b330a2706bbd7fa0cfe077bd55696362acc77519,admin
+RPF-20260320-0055,2026-03-20 17:20:03,🚨 SABOTAGE DETECTED,CRITICAL,87.1,9.26,Z5,"CRITICAL: Unauthorized person + high vibration (0.75)
+Detections: person (54%) | Risk: 87.1/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,d24cdd9237837d01c05c9d0a9c1988e20d81ae5b98ca67d525ad6b845eecb7e1,admin
+RPF-20260320-0056,2026-03-20 17:20:03,🚨 SABOTAGE DETECTED,CRITICAL,87.3,9.27,Z5,"CRITICAL: Unauthorized person + high vibration (0.70)
+Detections: person (69%) | Risk: 87.3/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,6665f8429f994aa0ac96fea2869965b45e0f5427b083a45fb22e6699df9a10e5,admin
+RPF-20260320-0057,2026-03-20 17:20:03,🚨 SABOTAGE DETECTED,CRITICAL,87.1,9.28,Z5,"CRITICAL: Unauthorized person + high vibration (0.61)
+Detections: person (77%) | Risk: 87.1/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,e4c623503c9e9ff975cc29b26dbef859eaa3ee3e18565d8712f10c0268a6ef49,admin
+RPF-20260320-0058,2026-03-20 17:20:03,🚨 SABOTAGE DETECTED,CRITICAL,83.6,9.29,Z5,"CRITICAL: Unauthorized person + high vibration (0.45)
+Detections: person (80%) | Risk: 83.6/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,fcf25467218fcbc9dca72ec057a44fc2507cfbca39763327ce1d0357f620afaf,admin
+RPF-20260320-0059,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,80.4,9.3,Z5,"CRITICAL: Unauthorized person + high vibration (0.43)
+Detections: person (81%) | Risk: 80.4/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,8cb0349d23c4bf3a843310ed7666209e2323a301c3fd90a675c913a2fa415bc0,admin
+RPF-20260320-0060,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,85.6,9.31,Z5,"CRITICAL: Unauthorized person + high vibration (0.51)
+Detections: person (71%) | Risk: 85.6/100",RPF-Patrol-Gamma,DISPATCHED,8.0,LOG,LOG:OK,0152d1507103e3bc1e370fa1c98aef2e5421c7ba7262355c25a6d249d7badaed,admin
+RPF-20260320-0061,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,86.3,9.32,Z5,"CRITICAL: Unauthorized person + high vibration (0.56)
+Detections: person (67%), person (30%) | Risk: 86.3/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,012021cc41c59da6266ba1a3a737cd7cbfe144cbbbb963a50aa2350509b0860f,admin
+RPF-20260320-0062,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,86.4,9.32,Z5,"CRITICAL: Unauthorized person + high vibration (0.57)
+Detections: person (64%), person (43%), person (34%) | Risk: 86.4/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,1c73f553be9702916a1e14519e931944853f821fdebca882f290d24758f20c36,admin
+RPF-20260320-0063,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,86.7,9.33,Z5,"CRITICAL: Unauthorized person + high vibration (0.50)
+Detections: person (65%), person (53%), person (35%) | Risk: 86.7/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,0ecb7800461f4fd7f14883039104616b38f5cf6f253d46be2135c800d6f36e7c,admin
+RPF-20260320-0064,2026-03-20 17:20:04,🚨 SABOTAGE DETECTED,CRITICAL,84.5,9.34,Z5,"CRITICAL: Unauthorized person + high vibration (0.47)
+Detections: person (74%), person (49%), person (35%), person (29%) | Risk: 84.5/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,eed925c750eababdcb65da0ad40f47219368d5a3967698874577a40b28616e23,admin
+RPF-20260320-0065,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,84.6,9.35,Z5,"CRITICAL: Unauthorized person + high vibration (0.47)
+Detections: person (61%), person (41%), person (35%), person (32%), person (27%) | Risk: 84.6/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,7a5aca72c7b48ea0a14d3e64c803d2b20ac98c956ac6b3034fa3dca2c4bc17b8,admin
+RPF-20260320-0066,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,86.6,9.36,Z5,"CRITICAL: Unauthorized person + high vibration (0.64)
+Detections: person (53%), person (49%), person (41%), person (37%), person (32%) | Risk: 86.6/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,137da6c51ef55a6cd2b4db76384386454e6c9b75d9228982eb562e7d264d7c48,admin
+RPF-20260320-0067,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,86.9,9.37,Z5,"CRITICAL: Unauthorized person + high vibration (0.69)
+Detections: person (72%), person (63%), person (51%), person (28%) | Risk: 86.9/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,900957ec918a5562813441acf20d45dac54c8d257752a5f25f5b47922d1890be,admin
+RPF-20260320-0068,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,86.9,9.38,Z5,"CRITICAL: Unauthorized person + high vibration (0.74)
+Detections: person (67%), person (65%), person (52%), person (51%) | Risk: 86.9/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,a4503fa4f4246e31323f57c176baec1e0893d9b6a70a31962a7faa4119ecc064,admin
+RPF-20260320-0069,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,86.8,9.38,Z5,"CRITICAL: Unauthorized person + high vibration (0.70)
+Detections: person (73%), person (63%), person (61%), person (38%) | Risk: 86.8/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,fa3929f9a20b789b679fb8d780e2f6694a2a11888b5e615799c0d11df43a1191,admin
+RPF-20260320-0070,2026-03-20 17:20:05,🚨 SABOTAGE DETECTED,CRITICAL,86.9,9.39,Z5,"CRITICAL: Unauthorized person + high vibration (0.70)
+Detections: person (63%), person (56%), person (55%), person (40%), person (30%), person (30%) | Risk: 86.9/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,e04449771e69edc89dfec8cc04486309cb22c37c68eea2273b8813b182ac488f,admin
+RPF-20260320-0071,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,86.1,9.4,Z5,"CRITICAL: Unauthorized person + high vibration (0.64)
+Detections: person (67%), person (56%), person (44%), person (33%) | Risk: 86.1/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,287b5d0ed51efa599b5aa101bd4557fa39fd222dbf1777c874cb9f30fc514d8b,admin
+RPF-20260320-0072,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,86.8,9.41,Z5,"CRITICAL: Unauthorized person + high vibration (0.55)
+Detections: person (69%), person (58%), person (40%), person (27%) | Risk: 86.8/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,ae2e81244134c9c948a8215674fb02715098dea5b02e7437d1aa95b21737bb83,admin
+RPF-20260320-0073,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,86.8,9.42,Z5,"CRITICAL: Unauthorized person + high vibration (0.61)
+Detections: person (64%), person (63%), person (50%) | Risk: 86.8/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,2a5f6f269c12540ec1b4dc4db0490c9c509494d0d5b9bad6e42adbfaefe186cc,admin
+RPF-20260320-0074,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,86.6,9.43,Z5,"CRITICAL: Unauthorized person + high vibration (0.62)
+Detections: person (61%), person (56%), person (49%), person (47%), person (26%) | Risk: 86.6/100",RPF-Patrol-Gamma,DISPATCHED,7.9,LOG,LOG:OK,c3125b0d67b565ff16fd8c70a14279c4afff69fcfaa5a4e93958924dcc39d483,admin
+RPF-20260320-0075,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,86.2,9.44,Z5,"CRITICAL: Unauthorized person + high vibration (0.60)
+Detections: person (66%), person (61%), person (46%), person (41%), person (29%) | Risk: 86.2/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,855a36421336503431e561c4fc7fa1b4373ba77eb167b0aaf08fd1e92ce825d4,admin
+RPF-20260320-0076,2026-03-20 17:20:06,🚨 SABOTAGE DETECTED,CRITICAL,85.6,9.44,Z5,"CRITICAL: Unauthorized person + high vibration (0.81)
+Detections: person (61%), person (53%), person (47%), person (46%), person (46%), person (42%), person (37%), person (32%) | Risk: 85.6/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,ca519c7d72702e8a78619cee4808654bf813b00155661879f48e2b8749c73118,admin
+RPF-20260320-0077,2026-03-20 17:20:07,🚨 SABOTAGE DETECTED,CRITICAL,85.6,9.45,Z5,"CRITICAL: Unauthorized person + high vibration (1.00)
+Detections: person (76%), person (68%), person (57%), person (52%), person (41%) | Risk: 85.6/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,c929a9e41683d48e3acbc71f688ec18540323eaa8b20bf4c968c54b5b1b30ee3,admin
+RPF-20260320-0078,2026-03-20 17:20:07,🚨 SABOTAGE DETECTED,CRITICAL,85.4,9.46,Z5,"CRITICAL: Unauthorized person + high vibration (0.99)
+Detections: person (74%), person (57%), person (37%), person (35%) | Risk: 85.4/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,27ce4d14d2bb4239cd346b41d00e82bfaac11358913fba840e130aa4df7aae42,admin
+RPF-20260320-0079,2026-03-20 17:20:07,🚨 SABOTAGE DETECTED,CRITICAL,85.8,9.47,Z5,"CRITICAL: Unauthorized person + high vibration (0.72)
+Detections: person (78%), person (62%), person (49%) | Risk: 85.8/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,ddf6cf8e9f8dc32a8b1709e5f9c2540ef62db5a44a9800f9bc62a44abc9dd307,admin
+RPF-20260320-0080,2026-03-20 17:20:07,🚨 SABOTAGE DETECTED,CRITICAL,82.2,9.49,Z5,"CRITICAL: Unauthorized person + high vibration (0.45)
+Detections: person (81%) | Risk: 82.2/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,efd2bcdad743bfc08009ff03c17f545877ea955884914c8f449f8863e519deaa,admin
+RPF-20260320-0081,2026-03-20 17:20:08,🚨 SABOTAGE DETECTED,CRITICAL,86.0,9.5,Z5,"CRITICAL: Unauthorized person + high vibration (0.61)
+Detections: person (80%) | Risk: 86.0/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,422cb9472d49be1511977ddc0cdd3cf6a46dbedff35a360484b7df0faf8e8764,admin
+RPF-20260320-0082,2026-03-20 17:20:08,🚨 SABOTAGE DETECTED,CRITICAL,85.1,9.51,Z5,"CRITICAL: Unauthorized person + high vibration (0.64)
+Detections: person (71%) | Risk: 85.1/100",RPF-Patrol-Gamma,DISPATCHED,7.8,LOG,LOG:OK,1ff8914bcd168391175431f13f6e013ce1a835f0af58307641afed155c67253f,admin
+RPF-20260320-0083,2026-03-20 17:20:21,🚨 SABOTAGE DETECTED,CRITICAL,80.3,10.16,Z5,"CRITICAL: Unauthorized person + high vibration (0.43)
+Detections: person (79%), person (66%), person (66%), person (64%), person (54%), person (52%), person (52%), person (50%), person (46%) | Risk: 8",RPF-Patrol-Gamma,DISPATCHED,7.3,LOG,LOG:OK,af4f3aa4254e7154cb0dd4ad9bbde4bab56a2ad2e5eb3964247045faef12ca2b,admin
+RPF-20260320-0084,2026-03-20 17:20:21,🚨 SABOTAGE DETECTED,CRITICAL,78.1,10.17,Z5,"CRITICAL: Unauthorized person + high vibration (0.40)
+Detections: person (80%), person (77%), person (68%), person (31%), person (28%) | Risk: 78.1/100",RPF-Patrol-Gamma,DISPATCHED,7.3,LOG,LOG:OK,5c6cea9630d5dc13e705440f606e4bc03bd7b3d51fdeda6f74668ff2b40f7453,admin

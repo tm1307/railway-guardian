@@ -1,0 +1,19 @@
+{
+  "incident_id": "RG-20260320-0044",
+  "rdso_code": "RDSO-INF-001",
+  "timestamp": "2026-03-20 17:19:55.634844",
+  "timestamp_epoch": 1774007395.634844,
+  "alert_type": "\ud83d\udd27 MECHANICAL FAULT",
+  "severity": "WARNING",
+  "risk_score": 50.0,
+  "vibration_level": 0.5687,
+  "detections": "none",
+  "explanation": "Unexplained high vibration (0.57). No work scheduled.\nRisk: 50.0/100 | Zone: Approach Zone \u2014 Exit",
+  "zone": "Approach Zone \u2014 Exit",
+  "jurisdiction": "Indian Railways",
+  "compliance": "RDSO Safety Directive 2024",
+  "system_version": "RailGuard Pro",
+  "model_pipeline": "YOLOv8n + IsolationForest + FusionEngine",
+  "integrity_hash": "0ce7d8c6645362512bf012c377a605b74f095e4aee0708a85f3068e3faac3538",
+  "has_frame_snapshot": true
+}

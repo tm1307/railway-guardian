@@ -1,0 +1,37 @@
+timestamp,action,trigger_type,risk_score,speed_kmph,braking_distance_m,operator,reason
+2026-03-16 21:25:59,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-16 21:25:59,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-16 21:25:59,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-16 21:25:59,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-16 21:26:07,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-16 21:26:07,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-16 21:26:07,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-16 21:26:07,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-16 21:26:31,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-16 21:26:31,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-16 21:26:31,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-16 21:26:31,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-16 21:31:46,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,251.7,admin,Manual emergency activation
+2026-03-16 21:34:33,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,71.9,admin,Manual emergency activation
+2026-03-16 21:34:36,BRAKE_RELEASED,RELEASE,—,—,—,admin,Brake released by admin
+2026-03-20 17:01:56,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-20 17:01:56,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-20 17:01:56,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-20 17:01:56,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-20 17:03:40,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-20 17:03:40,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-20 17:03:40,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-20 17:03:40,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-20 17:04:22,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-20 17:04:22,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-20 17:04:22,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-20 17:04:22,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-20 17:05:24,AUTO_BRAKE_TRIGGERED,AUTO,90,80,71.9,SYSTEM,Auto-trigger: Risk 90/100 ≥ threshold 85
+2026-03-20 17:05:24,MANUAL_BRAKE_TRIGGERED,MANUAL,—,100.0,218.5,test_operator,Test emergency
+2026-03-20 17:05:24,BRAKE_RELEASED,RELEASE,—,—,—,test_admin,Brake released by test_admin
+2026-03-20 17:05:24,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80,71.9,log_test,Testing log
+2026-03-20 17:16:58,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,71.9,admin,Manual emergency activation
+2026-03-20 17:17:31,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,71.9,admin,Manual emergency activation
+2026-03-20 17:17:34,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,71.9,admin,Manual emergency activation
+2026-03-20 17:17:36,BRAKE_RELEASED,RELEASE,—,—,—,admin,Brake released by admin
+2026-03-20 17:17:38,MANUAL_BRAKE_TRIGGERED,MANUAL,—,80.0,71.9,admin,Manual emergency activation

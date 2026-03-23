@@ -1,0 +1,80 @@
+timestamp,username,role,action,detail
+2026-03-16 21:25:59,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-16 21:25:59,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-16 21:25:59,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-16 21:25:59,testuser,Admin,TEST_ACTION,test detail
+2026-03-16 21:26:07,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-16 21:26:07,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-16 21:26:07,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-16 21:26:07,testuser,Admin,TEST_ACTION,test detail
+2026-03-16 21:26:31,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-16 21:26:31,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-16 21:26:31,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-16 21:26:31,testuser,Admin,TEST_ACTION,test detail
+2026-03-16 21:29:07,tm1307,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-16 21:30:58,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-16 21:31:29,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:31:46,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-16 21:31:46,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:18,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-16 21:34:26,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:33,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-16 21:34:33,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:36,admin,Admin,BRAKE_RELEASE,Brake released
+2026-03-16 21:34:36,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:45,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:46,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:47,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:49,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:34:53,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:35:47,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:35:49,admin,Admin,SYSTEM_START,System initiated
+2026-03-16 21:36:01,admin,Admin,SENSOR_CONNECT,Connected to 192.168.1.10:8080
+2026-03-16 21:36:01,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:01:56,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-20 17:01:56,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:01:56,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-20 17:01:56,testuser,Admin,TEST_ACTION,test detail
+2026-03-20 17:03:40,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-20 17:03:40,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:03:40,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-20 17:03:40,testuser,Admin,TEST_ACTION,test detail
+2026-03-20 17:04:22,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-20 17:04:22,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:04:22,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-20 17:04:22,testuser,Admin,TEST_ACTION,test detail
+2026-03-20 17:05:24,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-20 17:05:24,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:05:24,nobody,UNKNOWN,LOGIN_FAILED,User not found
+2026-03-20 17:05:24,testuser,Admin,TEST_ACTION,test detail
+2026-03-20 17:14:03,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:14:10,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:14:12,admin,Admin,LOGIN_FAILED,Wrong password
+2026-03-20 17:16:51,admin,Admin,LOGIN_SUCCESS,Logged in as Admin
+2026-03-20 17:16:58,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-20 17:17:24,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:17:31,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-20 17:17:31,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:17:34,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-20 17:17:34,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:17:36,admin,Admin,BRAKE_RELEASE,Brake released
+2026-03-20 17:17:36,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:17:38,admin,Admin,EMERGENCY_BRAKE,Manual brake triggered
+2026-03-20 17:17:38,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:35,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:35,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:37,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:37,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:38,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:41,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:18:54,admin,Admin,SENSOR_CONNECT,Phyphox: 192.168.1.10:8080
+2026-03-20 17:19:33,admin,Admin,SYSTEM_START,System initiated
+2026-03-20 17:20:37,admin,Admin,LOGOUT,User logged out
+2026-03-20 17:20:53,operator,Operator,LOGIN_SUCCESS,Logged in as Operator
+2026-03-20 17:21:17,operator,Operator,SYSTEM_START,System initiated
+2026-03-20 17:21:19,operator,Operator,SYSTEM_START,System initiated
+2026-03-20 17:21:29,operator,Operator,SYSTEM_START,System initiated
+2026-03-20 17:21:37,operator,Operator,SYSTEM_START,System initiated
+2026-03-20 17:21:40,operator,Operator,SYSTEM_START,System initiated
+2026-03-20 17:22:01,operator,Operator,LOGOUT,User logged out
+2026-03-20 17:22:15,viewer,Viewer,LOGIN_SUCCESS,Logged in as Viewer

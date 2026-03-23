@@ -1,0 +1,19 @@
+{
+  "incident_id": "RG-20260310-0001",
+  "rdso_code": "RDSO-SEC-003",
+  "timestamp": "2026-03-10 20:35:15.548361",
+  "timestamp_epoch": 1773155115.548361,
+  "alert_type": "\u26a0\ufe0f SUSPICIOUS ACTIVITY",
+  "severity": "WARNING",
+  "risk_score": 54.8,
+  "vibration_level": 0.0621,
+  "detections": "person (85%), handbag (27%)",
+  "explanation": "Person with equipment/tools detected.\nDetections: person (85%), handbag (27%) | Risk: 54.8/100 | Zone: Approach Zone \u2014 Bridge",
+  "zone": "Approach Zone \u2014 Bridge",
+  "jurisdiction": "Indian Railways",
+  "compliance": "RDSO Safety Directive 2024",
+  "system_version": "RailGuard Pro",
+  "model_pipeline": "YOLOv8n + IsolationForest + FusionEngine",
+  "integrity_hash": "0524335bb20d73d3137e32b2ac6c46e745a79b9c4560d714a9cda6847342cb41",
+  "has_frame_snapshot": true
+}
