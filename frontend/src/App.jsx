@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import DashboardLayout from './layouts/DashboardLayout';
 import Login from './pages/Login';
 import SecurityDashboard from './pages/SecurityDashboard';
@@ -13,6 +14,7 @@ import IntentPrediction from './pages/IntentPrediction';
 
 import InfraManagement from './pages/InfraManagement';
 import MaintenanceScheduler from './pages/MaintenanceScheduler';
+import PredictiveHealth from './pages/PredictiveHealth';
 import './index.css';
 
 const ProtectedRoute = ({ children }) => {
@@ -22,6 +24,7 @@ const ProtectedRoute = ({ children }) => {
 };
 
 const App = () => (
+  <ThemeProvider>
   <AuthProvider>
     <BrowserRouter>
       <Routes>
@@ -38,10 +41,12 @@ const App = () => (
 
           <Route path="infrastructure" element={<InfraManagement />} />
           <Route path="schedules" element={<MaintenanceScheduler />} />
+          <Route path="predictive" element={<PredictiveHealth />} />
         </Route>
       </Routes>
     </BrowserRouter>
   </AuthProvider>
+  </ThemeProvider>
 );
 
 export default App;

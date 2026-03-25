@@ -55,3 +55,8 @@ runs/
 *.mp4
 *.avi
 Procfile
+
+# Presentation & Docs generated for user only
+ARCHITECTURE.md
+FEATURE_GUIDE.md
+railway_guardian.db

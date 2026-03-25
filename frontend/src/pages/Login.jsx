@@ -72,9 +72,8 @@ const Login = () => {
         </form>
 
         <div style={{ marginTop: 20, textAlign: 'center', fontSize: '0.68rem', color: '#64748b' }}>
-          <div>Admin: admin / admin123</div>
-          <div>Operator: operator / operator123</div>
-          <div>Viewer: viewer / viewer123</div>
+          <div>Authorized Personnel Only • Ministry of Railways</div>
+          <div style={{ marginTop: 4 }}>Unauthorized access is a punishable offence under IT Act, 2000</div>
         </div>
       </div>
     </div>

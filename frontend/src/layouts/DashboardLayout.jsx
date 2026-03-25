@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useTheme } from '../context/ThemeContext';
 import {
   Shield, Activity, Video, Map, BarChart3, Cloud,
   Brain, Cpu, MessageSquare, Wrench, ClipboardList,
-  LogOut, Radio, User
+  LogOut, Radio, User, HeartPulse, Sun, Moon
 } from 'lucide-react';
 import RoboSarthi from '../components/RoboSarthi';
 import '../index.css';
 
 const DashboardLayout = () => {
   const { user, logout } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const [clock, setClock] = useState('');
 
@@ -49,6 +51,8 @@ const DashboardLayout = () => {
       group: 'INTELLIGENCE',
       items: [
         { to: '/risk', icon: <BarChart3 size={16} />, label: 'Risk Heatmap' },
+        { to: '/prediction', icon: <Brain size={16} />, label: 'Intent Prediction' },
+        { to: '/predictive', icon: <HeartPulse size={16} />, label: 'Track Health AI' },
       ]
     },
     {
@@ -77,6 +81,15 @@ const DashboardLayout = () => {
             <div className="pulse-dot" />
             SYSTEM SECURE
           </div>
+          <button onClick={toggleTheme} style={{
+            background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(148,163,184,0.12)',
+            borderRadius: 8, padding: '5px 10px', cursor: 'pointer', color: 'var(--text-secondary)',
+            display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.72rem', fontFamily: 'inherit',
+            transition: 'all 0.2s',
+          }}>
+            {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+            {theme === 'dark' ? 'Light' : 'Dark'}
+          </button>
           <div className="user-badge">
             <User size={14} />
             {user?.username?.toUpperCase()} ({user?.role})
@@ -113,6 +126,7 @@ const DashboardLayout = () => {
 
       {/* Content */}
       <main className="main-viewport">
+        <Outlet />
       </main>
 
       {/* Floating Chatbot */}

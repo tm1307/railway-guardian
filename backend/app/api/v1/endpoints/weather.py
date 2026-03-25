@@ -6,12 +6,12 @@ router = APIRouter()
 
 @router.get("/current")
 async def get_current_weather(user: dict = Depends(get_current_user)):
-    return weather_service.get_current()
+    return await weather_service.get_current()
 
 @router.get("/forecast")
 async def get_forecast(user: dict = Depends(get_current_user)):
-    return weather_service.get_forecast()
+    return await weather_service.get_forecast()
 
 @router.get("/rail-impact")
 async def get_rail_impact(user: dict = Depends(get_current_user)):
-    return weather_service.get_rail_impact()
+    return await weather_service.get_rail_impact()

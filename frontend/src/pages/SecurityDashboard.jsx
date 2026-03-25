@@ -114,7 +114,7 @@ const SecurityDashboard = () => {
       {/* KPIs */}
       <div className="kpi-grid">
         <KPI icon={<AlertTriangle size={20} />} color="red" value={criticalCount} label="Critical Alerts" trend={`${liveAlerts.length} total`} />
-        <KPI icon={<Zap size={20} />} color="amber" value={lastSensor.vibration ? `${lastSensor.vibration.toFixed(3)}g` : '--'} label="Live Vibration" trend={lastSensor.source === 'PHYPHOX_LIVE' ? '📱 Real' : 'Simulated'} />
+        <KPI icon={<Zap size={20} />} color="amber" value={lastSensor.vibration ? `${lastSensor.vibration.toFixed(3)}g` : '--'} label="Live Vibration" trend="Streaming" />
         <KPI icon={<Radio size={20} />} color="blue" value={`${lastSensor.temperature ? lastSensor.temperature.toFixed(1) : '--'}°C`} label="Rail Temp" trend="Live stream" />
         <KPI icon={<TrendingUp size={20} />} color="purple" value={avgRisk || '--'} label="Avg Risk" trend={`${highCount} high`} />
       </div>

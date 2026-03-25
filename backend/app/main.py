@@ -2,7 +2,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 import asyncio
 
-from .api.v1.endpoints import alerts, auth, vision, weather, chatbot, risk, intent, infrastructure, sensors, maintenance
+from .api.v1.endpoints import alerts, auth, vision, weather, chatbot, risk, intent, infrastructure, sensors, maintenance, predictive
 from .db.session import init_db
 from .core.security import get_password_hash
 
@@ -71,6 +71,7 @@ app.include_router(intent.router, prefix="/api/v1/intent", tags=["intent"])
 app.include_router(infrastructure.router, prefix="/api/v1/infrastructure", tags=["infrastructure"])
 app.include_router(sensors.router, prefix="/api/v1/sensors", tags=["sensors"])
 app.include_router(maintenance.router, prefix="/api/v1/maintenance", tags=["maintenance"])
+app.include_router(predictive.router, prefix="/api/v1/predictive", tags=["predictive"])
 
 # CORS
 app.add_middleware(

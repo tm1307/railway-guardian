@@ -13,11 +13,13 @@ class PhyphoxConnectRequest(BaseModel):
 @router.post("/phyphox/connect")
 async def connect_phyphox(req: PhyphoxConnectRequest, user: dict = Depends(get_current_user)):
     """Connect to a real Phyphox phone sensor via IP."""
-    success = await phyphox_service.connect(req.ip_address)
+    success, reason = await phyphox_service.connect(req.ip_address)
+    attempted_url = f"{phyphox_service.base_url}/get?accX&accY&accZ"
+    fail_msg = f"Failed to connect. Attempted: {attempted_url} | Reason: {reason}"
     return {
         "connected": success,
         "ip": req.ip_address,
-        "message": "Connected! Live sensor data will now flow from your phone." if success else "Failed to connect. Ensure Phyphox is running and IP is correct."
+        "message": "Connected! Live sensor data will now flow from your phone." if success else fail_msg
     }
 
 @router.get("/phyphox/status")

@@ -6,6 +6,7 @@ from datetime import datetime
 from ..core.sockets import manager, send_alert, send_sensor_update, send_weather_update
 from ..services.weather_service import weather_service
 from ..services.phyphox import phyphox_service
+from ..services.predictive_failure import predictive_engine
 
 logger = logging.getLogger(__name__)
 
@@ -87,6 +88,9 @@ async def sensor_broadcast_loop():
             _state["readings_history"].append(reading)
             _state["readings_history"] = _state["readings_history"][-500:]  # Keep last 500
             
+            # Feed into Predictive Track Failure Engine
+            predictive_engine.ingest_reading(reading)
+            
             await send_sensor_update(reading)
             
             # Auto-generate alert if thresholds breached
@@ -116,7 +120,7 @@ async def weather_broadcast_loop():
     """Broadcast weather updates every 30 seconds."""
     while True:
         try:
-            weather = weather_service.get_current()
+            weather = await weather_service.get_current()
             await send_weather_update(weather)
             await asyncio.sleep(30)
         except Exception as e:

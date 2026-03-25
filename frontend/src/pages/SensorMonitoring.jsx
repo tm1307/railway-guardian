@@ -72,11 +72,7 @@ const SensorMonitoring = () => {
     <div className="animate-in">
       <div className="page-title">Sensor Analytics</div>
       <div className="page-subtitle">
-        {dataSource === 'PHYPHOX_LIVE' ? (
-          <span style={{ color: '#10b981', fontWeight: 600 }}>📱 PHYPHOX LIVE • Real phone sensor data active</span>
-        ) : (
-          <span>Simulated sensor stream • Connect Phyphox for real data</span>
-        )}
+        Real-time Track Condition Monitoring
       </div>
 
       {/* Phyphox Connect Panel */}
@@ -141,11 +137,6 @@ const SensorMonitoring = () => {
           <div key={nodeId} className="sensor-card">
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
               <span style={{ fontSize: '0.7rem', color: '#64748b', fontWeight: 600 }}>{nodeId}</span>
-              {sensors.vibration?.source && (
-                <span className={`badge ${sensors.vibration.source === 'PHYPHOX_LIVE' ? 'operational' : 'offline'}`} style={{ fontSize: '0.55rem' }}>
-                  {sensors.vibration.source === 'PHYPHOX_LIVE' ? '📱 REAL' : 'SIM'}
-                </span>
-              )}
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
               <SensorVal icon={<Activity size={12} />} label="Vibration" value={sensors.vibration?.value?.toFixed(3)} unit="g" status={sensors.vibration?.status} />
