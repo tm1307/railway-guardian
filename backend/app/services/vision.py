@@ -16,14 +16,24 @@ class VisionService:
     def __init__(self, model_path="yolov8n.pt"):
         self.model = None
         self.model_path = model_path
-        try:
-            self.model = YOLO(model_path)
-            logging.info(f"YOLOv8 model loaded from {model_path}")
-        except Exception as e:
-            logging.error(f"Failed to load YOLOv8 model: {e}")
+        self._loaded = False
+
+    def _ensure_model(self):
+        """Lazy load the PyTorch model into memory only when first requested.
+        This prevents Render Free Tier OOM crashes when 4 Gunicorn workers start simultaneously.
+        """
+        if not self._loaded:
+            try:
+                self.model = YOLO(self.model_path)
+                logging.info(f"YOLOv8 model loaded dynamically from {self.model_path}")
+                self._loaded = True
+            except Exception as e:
+                logging.error(f"Failed to load YOLOv8 model: {e}")
+                self._loaded = False
 
     def process_frame(self, frame: np.ndarray):
         """Run YOLOv8 on a raw numpy frame (from webcam). Returns list of detections."""
+        self._ensure_model()
         if self.model is None or frame is None:
             return []
 
@@ -47,6 +57,7 @@ class VisionService:
 
     def detect_threats(self, image_path: str):
         """Run YOLOv8 on an image file path. Returns (detections, max_conf)."""
+        self._ensure_model()
         if not self.model or not os.path.exists(image_path):
             return [], 0.0
 
