@@ -18,3 +18,5 @@ websockets
 python-dotenv
 scikit-learn
 aiohttp
+gunicorn
+moviepy
