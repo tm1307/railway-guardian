@@ -29,7 +29,23 @@ class IntentPredictionEngine:
         self.scaler = StandardScaler()
         self.label_encoder = LabelEncoder()
         self.label_encoder.fit(THREAT_TYPES)
-        self._train_model()
+        self._model_ready = False
+
+    def _ensure_model(self):
+        if not self._model_ready:
+            try:
+                if os.path.exists(f"{MODEL_PATH}/intent_classifier.pkl"):
+                    self.model = joblib.load(f"{MODEL_PATH}/intent_classifier.pkl")
+                    self.scaler = joblib.load(f"{MODEL_PATH}/intent_scaler.pkl")
+                    self._model_ready = True
+                    logger.info("Loaded explicit Intent ML model from disk")
+                else:
+                    logger.info("Training Intent ML model dynamically...")
+                    self._train_model()
+                    self._model_ready = True
+            except Exception as e:
+                logger.error(f"Failed to load/train intent model: {e}")
+                self._model_ready = False
 
     def _generate_training_data(self):
         """Generate training set based on known threat patterns."""
@@ -93,6 +109,7 @@ class IntentPredictionEngine:
 
     def predict_single(self, zone_name: str, sensor_data: dict = None, maintenance_active: bool = False):
         """Predict intent for a single zone."""
+        self._ensure_model()
         now = datetime.utcnow()
         hour = now.hour
         is_night = 1 if (hour >= 22 or hour <= 5) else 0
@@ -161,6 +178,7 @@ class IntentPredictionEngine:
 
     def get_timeline(self, sensor_data: dict = None):
         """Get 24-hour threat prediction timeline."""
+        self._ensure_model()
         now = datetime.utcnow()
         timeline = []
         for i in range(24):
