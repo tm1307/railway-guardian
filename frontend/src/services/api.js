@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000';
+// Use environment variable if deployed, otherwise fallback to localhost
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const api = axios.create({ baseURL: BASE_URL });
 
@@ -87,7 +88,8 @@ export const sendManualAlert = (data) => api.post('/api/v1/maintenance/alert', d
 
 // WebSocket helper
 export const createWS = (channel = 'general') => {
-  return new WebSocket(`ws://localhost:8000/ws/${channel}`);
+  const wsUrl = BASE_URL.replace('http', 'ws');
+  return new WebSocket(`${wsUrl}/ws/${channel}`);
 };
 
 export default api;
