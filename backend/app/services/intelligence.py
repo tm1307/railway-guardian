@@ -42,10 +42,16 @@ class NightVisionProcessor:
 
 class IntelligenceService:
     def __init__(self):
-        self.yolo = YOLO('yolov8n.pt')
+        self.yolo = None
+        self._loaded_yolo = False
         self.night_processor = NightVisionProcessor()
         self.vibration_window = deque(maxlen=WINDOW_SIZE)
         self.anomaly_model = self._load_model()
+        
+    def _ensure_yolo(self):
+        if not self._loaded_yolo:
+            self.yolo = YOLO('yolov8n.pt')
+            self._loaded_yolo = True
 
     def _load_model(self):
         if os.path.exists(MODEL_PATH):
@@ -67,6 +73,7 @@ class IntelligenceService:
         return status, value
 
     def detect_objects(self, frame: np.ndarray) -> Tuple[np.ndarray, List[Dict[str, Any]]]:
+        self._ensure_yolo()
         results = self.yolo(frame, verbose=False)
         result = results[0]
         detections = []
